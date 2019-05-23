@@ -1,0 +1,4 @@
+.temp/
+.rn_temp/
+.DS_Store
+*/*.exe
