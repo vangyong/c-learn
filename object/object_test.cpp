@@ -5,33 +5,33 @@ using namespace std;
 
 
 class Box {
-	public:
-		double length;   // ³¤¶È
-		double breadth;  // ¿í¶È
-		double height;   // ¸ß¶È
+public:
+    double length;   // é•¿åº¦
+    double breadth;  // å®½åº¦
+    double height;   // é«˜åº¦
 };
 
 int main( ) {
-	Box Box1;        // ÉùÃ÷ Box1£¬ÀàÐÍÎª Box
-	Box Box2;        // ÉùÃ÷ Box2£¬ÀàÐÍÎª Box
-	double volume = 0.0;     // ÓÃÓÚ´æ´¢Ìå»ý
+    Box Box1;        // å£°æ˜Ž Box1ï¼Œç±»åž‹ä¸º Box
+    Box Box2;        // å£°æ˜Ž Box2ï¼Œç±»åž‹ä¸º Box
+    double volume = 0.0;     // ç”¨äºŽå­˜å‚¨ä½“ç§¯
 
-	// box 1 ÏêÊö
-	Box1.height = 5.0;
-	Box1.length = 6.0;
-	Box1.breadth = 7.0;
+    // box 1 è¯¦è¿°
+    Box1.height = 5.0;
+    Box1.length = 6.0;
+    Box1.breadth = 7.0;
 
-	// box 2 ÏêÊö
-	Box2.height = 10.0;
-	Box2.length = 12.0;
-	Box2.breadth = 13.0;
+    // box 2 è¯¦è¿°
+    Box2.height = 10.0;
+    Box2.length = 12.0;
+    Box2.breadth = 13.0;
 
-	// box 1 µÄÌå»ý
-	volume = Box1.height * Box1.length * Box1.breadth;
-	cout << "Box1 µÄÌå»ý£º" << volume <<endl;
+    // box 1 çš„ä½“ç§¯
+    volume = Box1.height * Box1.length * Box1.breadth;
+    cout << "Box1 çš„ä½“ç§¯ï¼š" << volume <<endl;
 
-	// box 2 µÄÌå»ý
-	volume = Box2.height * Box2.length * Box2.breadth;
-	cout << "Box2 µÄÌå»ý£º" << volume <<endl;
-	return 0;
+    // box 2 çš„ä½“ç§¯
+    volume = Box2.height * Box2.length * Box2.breadth;
+    cout << "Box2 çš„ä½“ç§¯ï¼š" << volume <<endl;
+    return 0;
 }

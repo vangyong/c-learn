@@ -5,26 +5,26 @@ using namespace std;
 
 
 int main() {
-	int  var = 20;   // Êµ¼Ê±äÁ¿µÄÉùÃ÷
-	int *ip;        // Ö¸Õë±äÁ¿µÄÉùÃ÷
-	ip = &var;       // ÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢ var µÄµØÖ·
-	int * *a;
+    int  var = 20;   // å®é™…å˜é‡çš„å£°æ˜
+    int *ip;        // æŒ‡é’ˆå˜é‡çš„å£°æ˜
+    ip = &var;       // åœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨ var çš„åœ°å€
+    int * *a;
 
-	cout << "Value of var variable: ";
-	cout << var << endl;
+    cout << "Value of var variable: ";
+    cout << var << endl;
 
-	// Êä³öÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢µÄµØÖ·
-	cout << "Address stored in ip variable: ";
-	cout << ip << endl;
+    // è¾“å‡ºåœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨çš„åœ°å€
+    cout << "Address stored in ip variable: ";
+    cout << ip << endl;
 
-	// ·ÃÎÊÖ¸ÕëÖĞµØÖ·µÄÖµ
-	cout << "Value of *ip variable: ";
-	cout << *ip << endl;
-	
-	// ·ÃÎÊÖ¸ÕëÖĞµØÖ·µÄÖµ
-	cout << "Value of * *a ariable: ";
-	cout << &a << endl;
-	
+    // è®¿é—®æŒ‡é’ˆä¸­åœ°å€çš„å€¼
+    cout << "Value of *ip variable: ";
+    cout << *ip << endl;
 
-	return 0;
+    // è®¿é—®æŒ‡é’ˆä¸­åœ°å€çš„å€¼
+    cout << "Value of * *a ariable: ";
+    cout << &a << endl;
+
+
+    return 0;
 }

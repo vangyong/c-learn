@@ -7,13 +7,13 @@ using namespace std;
 
 int main () {
 
-	double* pvalue  = NULL; // ³õÊ¼»¯Îª null µÄÖ¸Õë
-	pvalue  = new double;   // Îª±äÁ¿ÇëÇóÄÚ´æ
+    double* pvalue  = NULL; // åˆå§‹åŒ–ä¸º null çš„æŒ‡é’ˆ
+    pvalue  = new double;   // ä¸ºå˜é‡è¯·æ±‚å†…å­˜
 
-	*pvalue = 29494.99;     // ÔÚ·ÖÅäµÄµØÖ·´æ´¢Öµ
-	cout << "Value of pvalue : " << *pvalue << endl;
+    *pvalue = 29494.99;     // åœ¨åˆ†é…çš„åœ°å€å­˜å‚¨å€¼
+    cout << "Value of pvalue : " << *pvalue << endl;
 
-	delete pvalue;         // ÊÍ·ÅÄÚ´æ
+    delete pvalue;         // é‡Šæ”¾å†…å­˜
 
-	return 0;
+    return 0;
 }

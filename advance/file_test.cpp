@@ -7,45 +7,45 @@ using namespace std;
 
 int main () {
 
-	char data[100];
+    char data[100];
 
-	// ÒÔĞ´Ä£Ê½´ò¿ªÎÄ¼ş
-	ofstream outfile;
-	outfile.open("afile.dat");
+    // ä»¥å†™æ¨¡å¼æ‰“å¼€æ–‡ä»¶
+    ofstream outfile;
+    outfile.open("afile.dat");
 
-	cout << "Writing to the file" << endl;
-	cout << "Enter your name: ";
-	cin.getline(data, 100);
+    cout << "Writing to the file" << endl;
+    cout << "Enter your name: ";
+    cin.getline(data, 100);
 
-	// ÏòÎÄ¼şĞ´ÈëÓÃ»§ÊäÈëµÄÊı¾İ
-	outfile << data << endl;
+    // å‘æ–‡ä»¶å†™å…¥ç”¨æˆ·è¾“å…¥çš„æ•°æ®
+    outfile << data << endl;
 
-	cout << "Enter your age: ";
-	cin >> data;
-	cin.ignore();
+    cout << "Enter your age: ";
+    cin >> data;
+    cin.ignore();
 
-	// ÔÙ´ÎÏòÎÄ¼şĞ´ÈëÓÃ»§ÊäÈëµÄÊı¾İ
-	outfile << data << endl;
+    // å†æ¬¡å‘æ–‡ä»¶å†™å…¥ç”¨æˆ·è¾“å…¥çš„æ•°æ®
+    outfile << data << endl;
 
-	// ¹Ø±Õ´ò¿ªµÄÎÄ¼ş
-	outfile.close();
+    // å…³é—­æ‰“å¼€çš„æ–‡ä»¶
+    outfile.close();
 
-	// ÒÔ¶ÁÄ£Ê½´ò¿ªÎÄ¼ş
-	ifstream infile;
-	infile.open("afile.dat");
+    // ä»¥è¯»æ¨¡å¼æ‰“å¼€æ–‡ä»¶
+    ifstream infile;
+    infile.open("afile.dat");
 
-	cout << "Reading from the file" << endl;
-	infile >> data;
+    cout << "Reading from the file" << endl;
+    infile >> data;
 
-	// ÔÚÆÁÄ»ÉÏĞ´ÈëÊı¾İ
-	cout << data << endl;
+    // åœ¨å±å¹•ä¸Šå†™å…¥æ•°æ®
+    cout << data << endl;
 
-	// ÔÙ´Î´ÓÎÄ¼ş¶ÁÈ¡Êı¾İ£¬²¢ÏÔÊ¾Ëü
-	infile >> data;
-	cout << data << endl;
+    // å†æ¬¡ä»æ–‡ä»¶è¯»å–æ•°æ®ï¼Œå¹¶æ˜¾ç¤ºå®ƒ
+    infile >> data;
+    cout << data << endl;
 
-	// ¹Ø±Õ´ò¿ªµÄÎÄ¼ş
-	infile.close();
+    // å…³é—­æ‰“å¼€çš„æ–‡ä»¶
+    infile.close();
 
-	return 0;
+    return 0;
 }
