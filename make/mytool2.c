@@ -4,6 +4,6 @@
 
 void mytool2_print(char *print_str) {
 
-    printf("This is mytool2 print:%s", print_str);
+    printf("This is mytool2 print:%s\n", print_str);
 
 }

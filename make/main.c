@@ -4,8 +4,8 @@
 
 int main(int args, char **argv) {
 
-    mytool1_print("hello mytool1!");
+    mytool1_print("hello mytool1!\n");
 
-    mytool2_print("hello mytool2 !");
+    mytool2_print("hello mytool2 !\n");
 
 }
