@@ -2,12 +2,10 @@
 
 #include "mytool2.h"
 
-int main() {
+int main(int args, char **argv) {
 
-    mytool1_print("hellomytool1!");
+    mytool1_print("hello mytool1!");
 
     mytool2_print("hello mytool2 !");
-
-    return 0;
 
 }
