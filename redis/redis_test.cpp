@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
 	printf(reply->str);
 	freeReplyObject(reply);
 	
-	//ÉèÖÃÊı¾İ 
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	clock_t start, finish;
 	start = clock();
 	for(int i=0; i<10; i++) {

@@ -1,6 +1,6 @@
 /* speak.cpp */
 #include "speak.h"
-void Speak::sayHello(const char *str)
-{
-    std::cout << "Hello " << str << "\n";
+
+void Speak::sayHello(const char *str) {
+    std::cout << "Speak Hello " << str << "\n";
 }
