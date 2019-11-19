@@ -24,3 +24,4 @@
 5、编译代码
 g++ -std=c++11 -o test test.cpp -lrocksdb  -lpthread -ldl
 g++ -std=c++11 -o test2 test2.cpp -lrocksdb  -lpthread -ldl
+g++ -std=c++11 -o demo demo.cc -lrocksdb  -lpthread -ldl
