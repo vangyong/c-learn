@@ -29,7 +29,7 @@ int main() {
   // get value
   s = db->Get(ReadOptions(), "key1", &value);
   assert(s.ok());
-  printf("value is %s",&value)
+  printf("value is %s \n",&value);
   assert(value == "value");
 
   delete db;
