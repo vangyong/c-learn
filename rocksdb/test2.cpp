@@ -7,7 +7,7 @@
 
 using namespace rocksdb;
 
-std::string kDBPath = "/data/datas/rocksdb";
+std::string kDBPath = "/data/datas/rocksdb/test2";
 
 int main() {
   DB* db;

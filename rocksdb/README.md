@@ -12,13 +12,6 @@
     rpm -ivh gflags-2.1.1-7.el7.x86_64.rpm
     rpm -ivh zstd-1.4.2-1.el7.x86_64.rpm
 
-安装 zstandard
-wget https://github.com/facebook/zstd/archive/v1.1.3.tar.gz
-mv v1.1.3.tar.gz zstd-1.1.3.tar.gz
-tar zxvf zstd-1.1.3.tar.gz
-cd zstd-1.1.3
-make && make install
-
 2、下载rocksdb
     wget https://github.com/facebook/rocksdb/archive/v6.4.6.zip
 
@@ -27,3 +20,7 @@ make && make install
    make install-static
    make shared_lib
    make install-shared
+
+5、编译代码
+g++ -std=c++11 -o test test.cpp -lrocksdb  -lpthread -ldl
+g++ -std=c++11 -o test2 test2.cpp -lrocksdb  -lpthread -ldl

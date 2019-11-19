@@ -8,7 +8,7 @@
 using namespace std;
 using namespace rocksdb;
 
-const std::string PATH = "/data/datas/rocksdb";
+const std::string PATH = "/data/datas/rocksdb/test";
 
 int main(){
     DB* db;
@@ -24,7 +24,7 @@ int main(){
     if(status.ok()){
         status = db->Get(ReadOptions(), key, &get_value);
         if(status.ok()){
-            printf("get %s\n", get_value.c_str());
+            printf("get %s success!!\n", get_value.c_str());
         }else{
             printf("get failed\n"); 
         }
