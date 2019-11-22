@@ -25,3 +25,11 @@
 g++ -std=c++11 -o test test.cpp -lrocksdb  -lpthread -ldl
 g++ -std=c++11 -o test2 test2.cpp -lrocksdb  -lpthread -ldl
 g++ -std=c++11 -o demo demo.cc -lrocksdb  -lpthread -ldl
+
+
+6、编译ttl示例代码
+g++ -std=c++11 -o ttl_test ttl_test.cpp -lrocksdb  -lpthread -ldl
+./ttl_test
+
+g++ -std=c++11 -o ttl_read ttl_read.cpp -lrocksdb  -lpthread -ldl
+./ttl_read
