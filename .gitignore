@@ -3,5 +3,6 @@
 .DS_Store
 */*.exe
 *.idea/*
+.idea
 .idea/encodings.xml
 .vscode/
