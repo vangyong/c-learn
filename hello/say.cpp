@@ -1,7 +1,7 @@
 /* say.cpp */
 #include "say.h"
-void Say::sayString()
-{
+
+void Say::sayString() {
     std::cout << string << "\n";
 }
 

@@ -5,9 +5,11 @@
 	gcc helloworld.cpp -lstdc++ -o helloworld
 	或
 	c++ helloworld.cpp -o helloworld
+	指定标准库版本
+	g++ -std=c++11 helloworld.cpp -o helloworld
 
 2、两个源文件编译链接成一个单一的可执行程序
-	g++ hellospeak.cpp speak.cpp -o hellospeak
+	g++ speakmain.cpp speak.cpp -o speakmain
 
 3、源文件生成对象文件
 	g++ -c hellospeak.cpp -o hellospeak.o
