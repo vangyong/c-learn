@@ -17,7 +17,6 @@ int main() {
     options.create_if_missing = true;
     //options.WAL_ttl_seconds = 20;
 
-    // open DB
     //Status s = DB::Open(options, kDBPath, &db);
     Status s = DBWithTTL::Open(options, kDBPath, &db, 20, false);
     assert(s.ok());
@@ -25,14 +24,15 @@ int main() {
     Slice key("key1");
     Slice value("key1_value");
 
-    std::string get_value;
     // Put key-value
     s = db->Put(WriteOptions(), key, value);
     assert(s.ok());
+
     // Get value
+    std::string get_value;
     s = db->Get(ReadOptions(), key, &get_value);
     assert(s.ok());
-    printf("get value success is %s \n", get_value.c_str());
+    printf("ttl_test get value success is %s \n", get_value.c_str());
 
     delete db;
 
