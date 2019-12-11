@@ -6,39 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangyong/mygit/c-learn/base/exception_demo.cpp
+E:/mygit/c-learn/base/exception_demo.cpp
 iostream
 -
 exception
 -
 
-/Users/wangyong/mygit/c-learn/base/io_demo.cpp
+E:/mygit/c-learn/base/io_demo.cpp
 iostream
 -
 fstream
 -
 
-/Users/wangyong/mygit/c-learn/base/object_demo.cpp
+E:/mygit/c-learn/base/object_demo.cpp
 iostream
 -
 
-/Users/wangyong/mygit/c-learn/base/speak.cpp
+E:/mygit/c-learn/base/speak.cpp
 speak.h
-/Users/wangyong/mygit/c-learn/base/speak.h
+E:/mygit/c-learn/base/speak.h
 
-/Users/wangyong/mygit/c-learn/base/speak.h
+E:/mygit/c-learn/base/speak.h
 iostream
 -
 
-/Users/wangyong/mygit/c-learn/main.cpp
+E:/mygit/c-learn/main.cpp
 iostream
 -
 base/object_demo.cpp
-/Users/wangyong/mygit/c-learn/base/object_demo.cpp
+E:/mygit/c-learn/base/object_demo.cpp
 base/speak.cpp
-/Users/wangyong/mygit/c-learn/base/speak.cpp
+E:/mygit/c-learn/base/speak.cpp
 base/exception_demo.cpp
-/Users/wangyong/mygit/c-learn/base/exception_demo.cpp
+E:/mygit/c-learn/base/exception_demo.cpp
 base/io_demo.cpp
-/Users/wangyong/mygit/c-learn/base/io_demo.cpp
+E:/mygit/c-learn/base/io_demo.cpp
 
