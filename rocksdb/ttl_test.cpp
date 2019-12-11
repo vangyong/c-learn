@@ -20,16 +20,18 @@ int main() {
     Status s = DBWithTTL::Open(options, kDBPath, &db, 20, false);
     assert(s.ok());
 
-    Slice key("key1");
-    Slice value("key1_value");
-
     // Put key-value
-    s = db->Put(WriteOptions(), key, value);
-    assert(s.ok());
+    for(int a=1;a<1000;a++){
+        Slice key("key"+a);
+        Slice value("key1_value"+a);
+        s = db->Put(WriteOptions(), key, value);
+        assert(s.ok());
+    }
 
     // Get value
+    Slice get_key("key9");
     std::string get_value;
-    s = db->Get(ReadOptions(), key, &get_value);
+    s = db->Get(ReadOptions(), get_key, &get_value);
     assert(s.ok());
     printf("ttl_test get value success is %s \n", get_value.c_str());
 
