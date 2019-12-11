@@ -12,7 +12,6 @@ std::string kDBPath = "/data/datas/rocksdb/ttl_test";
 
 int main() {
     DBWithTTL* db;
-    Date_tiered
     Options options;
     options.create_if_missing = true;
     //options.WAL_ttl_seconds = 20;
