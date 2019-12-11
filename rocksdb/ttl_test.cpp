@@ -22,8 +22,8 @@ int main() {
 
     // Put key-value
     for(int a=1;a<1000;a++){
-        Slice key("key"+a);
-        Slice value("key1_value"+a);
+        Slice key(strcat("key",static_cast<std::string>(a)));
+        Slice value(strcat("key1_value",static_cast<std::string>(a)));
         s = db->Put(WriteOptions(), key, value);
         assert(s.ok());
     }
