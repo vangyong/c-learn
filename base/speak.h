@@ -1,3 +1,8 @@
+// Copyright 2019 Google Inc
+// License BSD
+// Author: wangyong
+// This is c plus test
+
 #include <iostream>
 
 class Speak {

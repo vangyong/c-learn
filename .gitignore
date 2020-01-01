@@ -6,4 +6,6 @@
 .idea
 .idea/*
 .idea/encodings.xml
+.idea/
+cmake-build-debug/
 .vscode/

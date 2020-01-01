@@ -17,18 +17,17 @@ int main() {
     options.create_if_missing = true;
     //options.WAL_ttl_seconds = 20;
 
-    // open DB
     //Status s = DB::Open(options, kDBPath, &db);
     Status s = DBWithTTL::Open(options, kDBPath, &db, 20, false);
     assert(s.ok());
 
     Slice key("key1");
     Slice value("key1_value");
-    // get value
+    // Get value
     std::string get_value;
     s = db->Get(ReadOptions(), key, &get_value);
     assert(s.ok());
-    printf("read get value is %s \n", get_value.c_str());
+    printf("ttl_read read get value is %s \n", get_value.c_str());
 
     delete db;
 
