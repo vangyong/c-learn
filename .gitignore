@@ -9,3 +9,4 @@
 .idea/
 cmake-build-debug/
 .vscode/
+.cmake-build-debug/*
