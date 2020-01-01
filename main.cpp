@@ -36,7 +36,7 @@ int main() {
     std::cout << *ip << std::endl;
 
     // 访问指针中地址的值
-    std::cout << "Value of * *a ariable: ";
+    std::cout << "Value of * *a variable: ";
     std::cout << &a << std::endl;
 
     //对象类
