@@ -4,5 +4,6 @@
 */*.exe
 *.idea/*
 .idea
+.idea/*
 .idea/encodings.xml
 .vscode/
