@@ -1,8 +1,8 @@
 #include <iostream>
-#include "base/object_demo.cpp"
-#include "base/speak.cpp"
-#include "base/exception_demo.cpp"
-#include "base/io_demo.cpp"
+#include "basic/object_demo.cpp"
+#include "basic/speak.cpp"
+#include "basic/exception_demo.cpp"
+#include "basic/io_demo.cpp"
 
 int main() {
     //简单打印hello world
