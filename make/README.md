@@ -1,3 +1,4 @@
+## makefile说明
 
 gcc -c main.c
 
