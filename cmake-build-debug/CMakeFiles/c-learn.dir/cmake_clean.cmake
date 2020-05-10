@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c-learn.dir/main.cpp.obj"
+  "CMakeFiles/c-learn.dir/main.cpp.o"
   "c-learn.pdb"
-  "c-learn.exe"
-  "c-learn.exe.manifest"
-  "libc-learn.dll.a"
+  "c-learn"
 )
 
 # Per-language clean rules from dependency scanning.
