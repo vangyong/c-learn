@@ -8,10 +8,10 @@
 
 using namespace rocksdb;
 
-std::string kDBPath = "/data/datas/rocksdb/ttl_test";
+std::string kDBPath = "/data/datas/rocksdb/ttl_demo";
 
 int main() {
-    DBWithTTL* db;
+    DBWithTTL *db;
     Options options;
     options.create_if_missing = true;
     //options.WAL_ttl_seconds = 20;
@@ -21,11 +21,11 @@ int main() {
     assert(s.ok());
 
     // Put key-value
-    for(int a=1;a<1000;a++){
+    for (int a = 1; a < 1000; a++) {
         string s_a = static_cast<std::string>(a);
         printf(s_a);
-        Slice key(strcat("key1",s_a));
-        Slice value(strcat("key1_value",s_a));
+        Slice key(strcat("key1", s_a));
+        Slice value(strcat("key1_value", s_a));
         s = db->Put(WriteOptions(), key, value);
         assert(s.ok());
     }

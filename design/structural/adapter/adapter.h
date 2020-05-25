@@ -5,8 +5,8 @@
 #ifndef C_LEARN_ADAPTER_H
 #define C_LEARN_ADAPTER_H
 
-#include "Target.h"
-#include "Adaptee.h"
+#include "target.h"
+#include "adaptee.h"
 
 class Adapter : public Target
 {

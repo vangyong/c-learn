@@ -9,10 +9,10 @@
 using namespace std;
 using namespace rocksdb;
 
-std::string kDBPath = "/data/datas/rocksdb/ttl_test";
+std::string kDBPath = "/data/datas/rocksdb/ttl_demo";
 
 int main() {
-    DBWithTTL* db;
+    DBWithTTL *db;
     Options options;
     options.create_if_missing = true;
     //options.WAL_ttl_seconds = 20;

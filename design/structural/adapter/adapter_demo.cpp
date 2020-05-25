@@ -3,9 +3,9 @@
 // Description: This is
 
 #include <iostream>
-#include "Adapter.h"
-#include "Adaptee.h"
-#include "Target.h"
+#include "adapter.h"
+#include "adaptee.h"
+#include "target.h"
 
 using namespace std;
 

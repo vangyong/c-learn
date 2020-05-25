@@ -8,27 +8,27 @@
 using namespace std;
 using namespace rocksdb;
 
-const std::string PATH = "/data/datas/rocksdb/test";
+const std::string PATH = "/data/datas/rocksdb/slice_demo";
 
-int main(){
-    DB* db;
+int main() {
+    DB *db;
     Options options;
     options.create_if_missing = true;
     Status status = DB::Open(options, PATH, &db);
     assert(status.ok());
     Slice key("foo");
     Slice value("bar");
-    
+
     std::string get_value;
     status = db->Put(WriteOptions(), key, value);
-    if(status.ok()){
+    if (status.ok()) {
         status = db->Get(ReadOptions(), key, &get_value);
-        if(status.ok()){
+        if (status.ok()) {
             printf("get %s success!!\n", get_value.c_str());
-        }else{
-            printf("get failed\n"); 
+        } else {
+            printf("get failed\n");
         }
-    }else{
+    } else {
         printf("put failed\n");
     }
 

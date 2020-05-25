@@ -5,7 +5,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
-#include "Student.h"
+#include "student.h"
 
 using namespace std;
 

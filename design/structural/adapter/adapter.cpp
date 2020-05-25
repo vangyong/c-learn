@@ -3,7 +3,7 @@
 // Description: This is
 
 
-#include "Adapter.h"
+#include "adapter.h"
 
 Adapter::Adapter(Adaptee * adaptee){
     m_pAdaptee =  adaptee;

@@ -69,25 +69,22 @@ int main() {
 
 
     //内存管理
-    double* pvalue  = NULL; // 初始化为 null 的指针
-    pvalue  = new double;   // 为变量请求内存
+    double *pvalue = NULL; // 初始化为 null 的指针
+    pvalue = new double;   // 为变量请求内存
     *pvalue = 29494.99;     // 在分配的地址存储值
     cout << "Value of pvalue : " << *pvalue << endl;
     delete pvalue;         // 释放内存
 
 
     //自定义异常
-    try
-    {
+    try {
         throw MyException();
     }
-    catch(MyException& e)
-    {
+    catch (MyException &e) {
         std::cout << "MyException caught" << std::endl;
         std::cout << e.what() << std::endl;
     }
-    catch(std::exception& e)
-    {
+    catch (std::exception &e) {
         //其他的错误
     }
 
