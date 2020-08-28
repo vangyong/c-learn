@@ -22,29 +22,31 @@ void selectionSort(T arr[], int n) {
 }
 
 int main() {
-    int a[10] = {10, 9, 7, 8, 65, 4, 3, 2,5, 1};
+    int a[10] = {10, 9, 7, 8, 65, 4, 3, 2, 5, 1};
     selectionSort(a, 10);
     for (int i = 0; i < 10; i++)
         cout << a[i] << " ";
     cout << endl;
 
 
-    float b[10] = {10.0, 9.1, 7.2, 8.1, 65.0, 4, 3, 2,5, 1};
+    float b[10] = {10.0, 9.1, 7.2, 8.1, 65.0, 4, 3, 2, 5, 1};
     selectionSort(b, 10);
     for (int i = 0; i < 10; i++)
         cout << b[i] << " ";
     cout << endl;
 
 
-    string c[4] = {"D","C","B","A"};
+    string c[4] = {"D", "C", "B", "A"};
     selectionSort(c, 4);
     for (int i = 0; i < 4; i++)
         cout << c[i] << " ";
     cout << endl;
 
 
-
-    Student d[4] = {{"D",90},{"C",100},{"B",95},{"A",95}};
+    Student d[4] = {{"D", 90},
+                    {"C", 100},
+                    {"B", 95},
+                    {"A", 95}};
     selectionSort(d, 4);
     for (int i = 0; i < 4; i++)
         cout << d[i] << " ";

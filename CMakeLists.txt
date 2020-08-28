@@ -3,4 +3,4 @@ project(cpp-learn)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpp-learn main.cpp)
+add_executable(cpp-learn main.cpp basic/socket_demo.cpp)

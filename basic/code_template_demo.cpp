@@ -12,13 +12,14 @@ namespace mynamespace {
     class EventLoop : {
     public:
         typedef vector<int> IntVector;
-        enum UrlTableErrors{
-            ERROR_OUT_OF_MEMORY=0,
+        enum UrlTableErrors {
+            ERROR_OUT_OF_MEMORY = 0,
             ERROR_MALFORMED_INPUT,
         };
 
         explicit EventLoop(const int xx);
-        void Add(const std::string& input,Channel* output)
+
+        void Add(const std::string &input, Channel *output)
 
     private:
         const int kDaysInweek = 7;
