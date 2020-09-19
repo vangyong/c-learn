@@ -65,9 +65,5 @@ int main() {
         //其他的错误
     }
 
-    FileTest fileTest;
-    fileTest.writeFile();
-    fileTest.readFile();
-
     return 0;
 }

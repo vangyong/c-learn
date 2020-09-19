@@ -2,7 +2,7 @@
 #include <fstream>
 
 
-class FileTest {
+class IoDemo {
 
 public:
     static void writeFile(void) {
@@ -26,7 +26,7 @@ public:
         std::cin.ignore();
 
         // 再次向文件写入用户输入的数据
-        outfile << data << endl;
+        outfile << data << std::endl;
 
         // 关闭打开的文件
         outfile.close();
@@ -40,11 +40,11 @@ public:
         ifstream infile;
         infile.open("afile.dat");
 
-        std::cout << "Reading from the file" << endl;
+        std::cout << "Reading from the file" << std::endl;
         infile >> data;
 
         // 在屏幕上写入数据
-        std::cout << data << endl;
+        std::cout << data << std::endl;
 
         // 再次从文件读取数据，并显示它
         infile >> data;
@@ -55,4 +55,12 @@ public:
     }
 
 };
+
+int main() {
+    IoDemo ioDemo;
+    ioDemo.writeFile();
+    ioDemo.readFile();
+    return 0;
+}
+
 
