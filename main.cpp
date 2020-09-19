@@ -3,6 +3,9 @@
 #include "basic/exception_demo.cpp"
 #include "basic/io_demo.cpp"
 
+using namespace std;
+
+
 int main() {
     //简单打印hello world
     std::cout << "Hello, World!" << std::endl;
