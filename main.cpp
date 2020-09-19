@@ -1,5 +1,4 @@
 #include <iostream>
-#include "basic/object_demo.cpp"
 #include "basic/speak.cpp"
 #include "basic/exception_demo.cpp"
 #include "basic/io_demo.cpp"
