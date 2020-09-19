@@ -1,6 +1,7 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
+using namespace std;
 
 class IoDemo {
 
@@ -13,20 +14,20 @@ public:
         ofstream outfile;
         outfile.open("afile.dat");
 
-        std::cout << "Writing to the file" << std::endl;
-        std::cout << "Enter your name: ";
-//      std::cin.getline(data, 100);
-        std::cin >> data;
+        cout << "Writing to the file" << endl;
+        cout << "Enter your name: ";
+//      cin.getline(data, 100);
+        cin >> data;
 
         // 向文件写入用户输入的数据
         outfile << data << endl;
 
-        std::cout << "Enter your age: ";
-        std::cin >> data;
-        std::cin.ignore();
+        cout << "Enter your age: ";
+        cin >> data;
+        cin.ignore();
 
         // 再次向文件写入用户输入的数据
-        outfile << data << std::endl;
+        outfile << data << endl;
 
         // 关闭打开的文件
         outfile.close();
@@ -40,15 +41,15 @@ public:
         ifstream infile;
         infile.open("afile.dat");
 
-        std::cout << "Reading from the file" << std::endl;
+        cout << "Reading from the file" << endl;
         infile >> data;
 
         // 在屏幕上写入数据
-        std::cout << data << std::endl;
+        cout << data << endl;
 
         // 再次从文件读取数据，并显示它
         infile >> data;
-        std::cout << data << endl;
+        cout << data << endl;
 
         // 关闭打开的文件
         infile.close();
