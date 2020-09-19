@@ -1,10 +1,11 @@
 #include <iostream>
+#include "basic/speak.cpp"
 
 using namespace std;
 
 class Main{
 
-}
+};
 
 int main() {
     //简单打印hello world
@@ -47,6 +48,11 @@ int main() {
     *pvalue = 29494.99;     // 在分配的地址存储值
     cout << "Value of pvalue : " << *pvalue << endl;
     delete pvalue;         // 释放内存
+
+    Speak speak;
+    speak.sayHello("hello sayhello");
+    speak.sayFromStatic("static say");
+
 
     return 0;
 }
