@@ -1,8 +1,10 @@
 #include <iostream>
-#include "basic/speak.cpp"
-#include "basic/exception_demo.cpp"
-#include "basic/io_demo.cpp"
 
+using namespace std;
+
+class Main{
+
+}
 
 int main() {
     //简单打印hello world
@@ -39,31 +41,12 @@ int main() {
     cout << "Value of * *a variable: ";
     cout << &a << endl;
 
-    //接口（头文件）
-    Speak speak;
-    speak.sayHello("this is my word");
-    speak.sayFromStatic("call static");
-
-
     //内存管理
     double *pvalue = NULL; // 初始化为 null 的指针
     pvalue = new double;   // 为变量请求内存
     *pvalue = 29494.99;     // 在分配的地址存储值
     cout << "Value of pvalue : " << *pvalue << endl;
     delete pvalue;         // 释放内存
-
-
-    //自定义异常
-    try {
-        throw MyException();
-    }
-    catch (MyException &e) {
-        cout << "MyException caught" << endl;
-        cout << e.what() << endl;
-    }
-    catch (exception &e) {
-        //其他的错误
-    }
 
     return 0;
 }
