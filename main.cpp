@@ -62,7 +62,7 @@ int main() {
     volume = Box2.getVolume();
     cout << "Box2 的体积：" << volume << endl;
 
-    //头文件
+    //接口（头文件）
     Speak speak;
     speak.sayHello("this is my word");
     speak.sayFromStatic("call static");

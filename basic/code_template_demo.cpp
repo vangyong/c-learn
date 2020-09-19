@@ -25,10 +25,7 @@ namespace mynamespace {
         const int kDaysInweek = 7;
         int num_entries_;
         int num_complateted_connections_;
-
     };
-
-
 }
 
 

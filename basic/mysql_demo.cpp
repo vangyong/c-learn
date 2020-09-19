@@ -5,9 +5,8 @@
 #include "stdio.h"
 #include "mysql.h"
 
-int main()
-{
-    MYSQL * con; //= mysql_init((MYSQL*) 0);
+int main() {
+    MYSQL *con; //= mysql_init((MYSQL*) 0);
     MYSQL_RES *res;
     MYSQL_ROW row;
     char tmp[400];
@@ -27,7 +26,7 @@ int main()
 
     int count = 0;
 
-    con = mysql_init((MYSQL*)0);
+    con = mysql_init((MYSQL *) 0);
 
     if (con != NULL && mysql_real_connect(con, dbip, dbuser, dbpasswd, dbname, 3306, NULL, 0)) {
         if (!mysql_select_db(con, dbname)) {
@@ -37,13 +36,11 @@ int main()
             rt = mysql_real_query(con, query, strlen(query));
             if (rt) {
                 printf("Error making query: %s !!!\n", mysql_error(con));
-            }
-            else {
+            } else {
                 printf("query %s succeed!\n", query);
             }
         }
-    }
-    else {
+    } else {
         MessageBoxA(NULL, "Unable to connect the database,check your configuration!", "", NULL);
     }
 
@@ -52,29 +49,23 @@ int main()
 
 
     rt = mysql_real_query(con, tmp, strlen(tmp));
-    if (rt)
-    {
+    if (rt) {
         printf("Error making query: %s !!!\n", mysql_error(con));
-    }
-    else
-    {
+    } else {
         printf("%s executed!!!\n", tmp);
     }
 
     sprintf(tmp, "select * from %s", tablename);
     rt = mysql_real_query(con, tmp, strlen(tmp));
-    if (rt)
-    {
+    if (rt) {
         printf("Error making query: %s !!!\n", mysql_error(con));
-    }
-    else
-    {
+    } else {
         printf("%s executed!!!\n", tmp);
     }
     res = mysql_store_result(con);//将结果保存在res结构体中
 
     while (row = mysql_fetch_row(res)) {
-        for (t = 0; t<mysql_num_fields(res); t++) {
+        for (t = 0; t < mysql_num_fields(res); t++) {
             printf("%s  ", row[t]);
         }
         printf(".............\n");

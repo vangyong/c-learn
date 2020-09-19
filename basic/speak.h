@@ -1,7 +1,6 @@
-// Copyright 2019 Google Inc
-// License BSD
-// Author: wangyong
-// This is c plus test
+// Author: 王勇
+// Time: 2020-09-19
+// Description: 说话接口
 
 #include <iostream>
 
